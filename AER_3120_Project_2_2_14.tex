@@ -1,0 +1,106 @@
+\documentclass[a4paper,oneside,16pt]{article}
+\usepackage{graphicx}
+\graphicspath{{D:/Aerospace/Aerospace-2023/}}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[top=0.75in,bottom=.5in,right=0.5in,left=.5in,includeheadfoot]{geometry}
+\usepackage{color}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{hyperref}
+\hypersetup{colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black}
+\usepackage{multicol}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{mathdesign}
+\usepackage[table]{xcolor}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage[
+backend=bibtex,
+style=ieee,
+sorting=ynt
+]{biblatex}
+\addbibresource{D:/Aerospace/Aerospace-2023/citation.bib}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\makeatletter
+\@addtoreset{section}{part}
+\makeatother
+\titleformat{\part}[display]
+{\normalfont\large\bfseries}{}{0pt}{}
+\titleformat{\section}[display]
+{\normalfont\normalsize\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}[display]
+{\normalfont\scriptsize\bfseries}{}{0pt}{}
+\usepackage{listings}
+\usepackage{newtxtext,newtxmath}
+\renewcommand{\arraystretch}{2.5}
+
+%\newgeometry{top=0.125in,bottom=.1875in,right=0.1875in,left=.1875in}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.92,0.92,0.92}
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
+	\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{2pt}
+\lhead{Cairo University\par
+	Faculty of Engineering\par
+	Aerospace Engineering Dept.\par}
+\chead{\includegraphics[scale=0.5]{AerospaceDeptLogo.jpg}  }
+\rhead{
+	
+	Report (2) \par
+	AER 3120 - Aerodynamics (Boundary Layer)\par
+	$3^{rd}$ Year, $2^{nd}$ Semester 2021/2022 \par}
+\begin{document}	
+\tikz[overlay, remember picture] {
+		\draw[black,  very thick] (15,2) rectangle (18,3);
+		\draw[black, very thick] (16.5,2) -- (16.5,3);
+		\node at (15.75,2.5) {{\huge 2}};
+		\node at (17.25,2.5) {{\huge 14}};
+	\node[minimum width=12mm] at ([shift={(185.5mm,-10mm)}]current page.north west) { };}
+		
+	\thispagestyle{fancy}
+	
+	
+\vspace*{\fill}
+\begin{center}
+\Huge	Local Skin friction coefficient and wall sheer stress calculations using Pohlhausen Method
+\end{center}
+\vspace*{\fill}
+By: \hfill Submitted to:
+
+\noindent\hrulefill
+
+
+\noindent Mohammad Khaled Gamal Ali \hfill Dr Hesham M. Elbanna
+
+\noindent Sec:2, BN:14
+
+
+\end{document}
